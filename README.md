@@ -13,7 +13,7 @@
 
 ## The first 20 rows from the original data file
 
-| Zip Code | Building type (service class) | Consumption (therms) | Consumption (GJ) | Utility/Data Source |
+| Zip Code | Building type (service class  | Consumption (therms) | Consumption (GJ) | Utility/Data Source |
 |----------|-------------------------------|----------------------|------------------|---------------------|
 | 10300    | Commercial                    | 470                  | 50               | National Grid       |
 | 10335    | Commercial                    | 647                  | 68               | National Grid       |
@@ -39,7 +39,7 @@
 ## Data Munging Process
 
 1. The third column and the fourth column are actually the same measurements except for the units. Therefore, I decided to delete the fourth column.
-    > | Zip Code | Building type (service class) | Consumption (therms) | Consumption (GJ) | Utility/Data Source |
+    > | Zip Code | Building type (service class  | Consumption (therms) | Consumption (GJ) | Utility/Data Source |
     > |----------|-------------------------------|----------------------|------------------|---------------------|
     - how I remove the header of the fourth column [ **Consumption (GJ)** ]
     ``` 
@@ -51,7 +51,7 @@
     ``` 
 
 2. There are some missing values, so I chose to remove them so that my analysis is correct.
-    > | Zip Code | Building type (service class) | Consumption (therms) | Consumption (GJ) | Utility/Data Source |
+    > | Zip Code | Building type (service class  | Consumption (therms) | Consumption (GJ) | Utility/Data Source |
     > |----------|-------------------------------|----------------------|------------------|---------------------|
     > | 11335    | Large residential             |                      |                  | National Grid       |
     ```
@@ -60,7 +60,7 @@
     ```
 
 3. In the raw data file, some values in the first column [ **Zip Code** ] not only include the zip code information, but also include the specific latitude and longitude. To standardize the format of the first column, I only kept the first five characters of the values in the first column.
-    > | Zip Code                                 | Building type (service class) | Consumption (therms) | Consumption (GJ) | Utility/Data Source |
+    > | Zip Code                                 | Building type (service class  | Consumption (therms) | Consumption (GJ) | Utility/Data Source |
     > |------------------------------------------|-------------------------------|----------------------|------------------| --------------------|
     > | 11420(40.673345242689, -73.817707171649) | Small residential             | 9694601              | 1022835          | National Grid       |
     ```
