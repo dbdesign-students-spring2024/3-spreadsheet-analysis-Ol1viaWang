@@ -19,6 +19,7 @@ Replace the contents of this file with a report, as described in the [instructio
 ## The first 20 rows from the original data file
 
 | Zip Code | Building type (service class) | Consumption (therms) | Consumption (GJ) | Utility/Data Source |
+|----------|-------------------------------|----------------------|------------------|---------------------|
 | 10300    | Commercial                    | 470                  | 50               | National Grid       |
 | 10335    | Commercial                    | 647                  | 68               | National Grid       |
 | 10360    | Large residential             | 33762                | 3562             | National Grid       |
@@ -54,6 +55,7 @@ Replace the contents of this file with a report, as described in the [instructio
     ``` 
 
 2. There are some missing values, so I chose to remove them so that my analysis is correct.
+    > |----------|-------------------------------|----------------------|------------------|---------------------|
     > | 11335    | Large residential             |                      |                  | National Grid       |
     ```
     if row[2] != '':  # remove missing values
@@ -61,6 +63,7 @@ Replace the contents of this file with a report, as described in the [instructio
     ```
 
 3. In the raw data file, some values the first column [ **Zip Code** ] not only include the zip code information, but also include the specific latitude and longitude. To standardize the format of the first column, I only kept the first five characters of the values in the first column.
+    > |------------------------------------------|----------------------|------------------|----------------| ------------------|
     > | 11420(40.673345242689, -73.817707171649) | Small residential    | 9694601          | 1022835        | National Grid     |
     ```
     for row in reader:
