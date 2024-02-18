@@ -3,23 +3,22 @@ A little assignment to practice finding data, munging it, and analyzing it in a 
 
 Replace the contents of this file with a report, as described in the [instructions](./instructions.md).
 
-### Data Set Details 
+# Data Set Details 
 
 ## Data Sources
 
-# The origin of my dataset
+### The origin of my dataset
 - [Natural Gas Consumption by ZIP Code - 2010](https://data.cityofnewyork.us/Environment/Natural-Gas-Consumption-by-ZIP-Code-2010/uedp-fegm/about_data)
-# The original raw data (CSV)
+### The original raw data (CSV)
 - [Raw data](./data/raw_data.csv)
-# Munged data file (CSV)
+### Munged data file (CSV)
 - [Clean data](./data/clean_data.csv)
-# Spreadsheet including the formulas and charts
+### Spreadsheet including the formulas and charts
 - [Clean data excel](./data/Clean_data.xlsx)
 
 ## The first 20 rows from the original data file
 
 | Zip Code | Building type (service class) | Consumption (therms) | Consumption (GJ) | Utility/Data Source |
-
 | 10300    | Commercial                    | 470                  | 50               | National Grid       |
 | 10335    | Commercial                    | 647                  | 68               | National Grid       |
 | 10360    | Large residential             | 33762                | 3562             | National Grid       |
@@ -41,7 +40,6 @@ Replace the contents of this file with a report, as described in the [instructio
 | 11323    | Commercial                    | 3637                 | 384              | National Grid       |
 | 11332    | Commercial                    | 3795                 | 400              | National Grid       |
 
-
 ## Data Munging Process
 
 1. The third column and the fourth column are actually the same measurements except for the units. Therefore, I decided to delete the fourth column.
@@ -56,8 +54,7 @@ Replace the contents of this file with a report, as described in the [instructio
     ``` 
 
 2. There are some missing values, so I chose to remove them so that my analysis is correct.
-    > | Zip Code | Building type (service class) | Consumption (therms) | Consumption (GJ) | Utility/Data Source |
-      | 11335    | Large residential             |                      |                  | National Grid       |
+    > | 11335    | Large residential             |                      |                  | National Grid       |
     ```
     if row[2] != '':  # remove missing values
             processed_data.append(row)
@@ -75,7 +72,7 @@ Replace the contents of this file with a report, as described in the [instructio
     sorted_data = sorted(processed_data, key = lambda x: (x[1], x[3]))
     ```
 
-### Analysis
+# Analysis
 
 ## Aggregate Statistics
 
