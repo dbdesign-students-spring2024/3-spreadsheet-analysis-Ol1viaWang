@@ -1,8 +1,3 @@
-# Spreadsheet Analysis
-A little assignment to practice finding data, munging it, and analyzing it in a spreadsheet program.
-
-Replace the contents of this file with a report, as described in the [instructions](./instructions.md).
-
 # Data Set Details 
 
 ## Data Sources
@@ -45,6 +40,7 @@ Replace the contents of this file with a report, as described in the [instructio
 
 1. The third column and the fourth column are actually the same measurements except for the units. Therefore, I decided to delete the fourth column.
     > | Zip Code | Building type (service class) | Consumption (therms) | Consumption (GJ) | Utility/Data Source |
+    > |----------|-------------------------------|----------------------|------------------|---------------------|
     - how I remove the header of the fourth column [ **Consumption (GJ)** ]
     ``` 
     header.pop(3)
@@ -55,6 +51,7 @@ Replace the contents of this file with a report, as described in the [instructio
     ``` 
 
 2. There are some missing values, so I chose to remove them so that my analysis is correct.
+    > | Zip Code | Building type (service class) | Consumption (therms) | Consumption (GJ) | Utility/Data Source |
     > |----------|-------------------------------|----------------------|------------------|---------------------|
     > | 11335    | Large residential             |                      |                  | National Grid       |
     ```
@@ -63,8 +60,9 @@ Replace the contents of this file with a report, as described in the [instructio
     ```
 
 3. In the raw data file, some values the first column [ **Zip Code** ] not only include the zip code information, but also include the specific latitude and longitude. To standardize the format of the first column, I only kept the first five characters of the values in the first column.
-    > |------------------------------------------|----------------------|------------------|----------------| ------------------|
-    > | 11420(40.673345242689, -73.817707171649) | Small residential    | 9694601          | 1022835        | National Grid     |
+    > | Zip Code                                 | Building type (service class) | Consumption (therms) | Consumption (GJ) | Utility/Data Source |
+    > |------------------------------------------|-------------------------------|----------------------|------------------| --------------------|
+    > | 11420(40.673345242689, -73.817707171649) | Small residential             | 9694601              | 1022835          | National Grid       |
     ```
     for row in reader:
         row[0] = row[0][:5]
