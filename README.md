@@ -86,11 +86,11 @@ To better compare natural gas consumption, I created seperate statistics for dif
 
 ![Minimum Consumption Across Building Type and Utility](./images/Min.jpg)
 
-From the chart, we can tell that residential buildings, regardless of their sizes, have the highest three minimum consumption. This makes sense because residential buildings are likely always to be occupied, while other buildings might buildings such as factories and schools might use gas on a more seasonal basis.
+From the chart, we can tell that residential buildings, regardless of their sizes, have the highest three minimum consumption. This makes sense because residential buildings are likely always to be occupied, while other buildings such as factories and schools might use gas on a more seasonal basis.
 
 ![Maximum Consumption Across Building Type and Utility](./images/Max.jpg)
 
-Different from the minimum chart, commercial buildings have the highest natural gas usage. Commercial establishments often use equipment and machinery that require significant amounts of energy such as commercial kitchen equipment in restaurants or industrial machines in factories. Hence, it makes sense why commercial buildings use the most energy. However, maximum industrial building energy-consumption is not as high as I expected. I thought some specialized factories, such as metal manufacturing, have inherently energy-intensive processes.
+Different from the minimum chart, commercial buildings have the highest natural gas usage. Commercial establishments often use equipment and machinery that require significant amounts of energy such as commercial kitchen equipment in restaurants. Hence, it makes sense why commercial buildings use the most energy. However, maximum industrial building energy-consumption is not as high as I expected. I thought some specialized factories, such as metal manufacturing, have inherently energy-intensive processes.
 
 ![Average Consumption Across Building Type and Utility](./images/Avg.jpg)
 
