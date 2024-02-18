@@ -59,7 +59,7 @@
             processed_data.append(row)
     ```
 
-3. In the raw data file, some values the first column [ **Zip Code** ] not only include the zip code information, but also include the specific latitude and longitude. To standardize the format of the first column, I only kept the first five characters of the values in the first column.
+3. In the raw data file, some values in the first column [ **Zip Code** ] not only include the zip code information, but also include the specific latitude and longitude. To standardize the format of the first column, I only kept the first five characters of the values in the first column.
     > | Zip Code                                 | Building type (service class) | Consumption (therms) | Consumption (GJ) | Utility/Data Source |
     > |------------------------------------------|-------------------------------|----------------------|------------------| --------------------|
     > | 11420(40.673345242689, -73.817707171649) | Small residential             | 9694601              | 1022835          | National Grid       |
